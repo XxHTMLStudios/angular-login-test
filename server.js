@@ -1,7 +1,9 @@
 const path = require("path");
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
+app.use(cors());
 // Serve static files
 app.use(express.static(__dirname + "/dist/login-angular"));
 
@@ -19,7 +21,7 @@ app.post("/api/login", (req, res) => {
       isValid: true,
     });
   } else {
-    res.status(404).json({
+    res.status(200).json({
       isValid: false,
     });
   }
