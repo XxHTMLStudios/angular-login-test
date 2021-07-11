@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { environment } from 'src/environments/environment';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: 'app-prueba',
@@ -7,7 +6,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./prueba.component.css']
 })
 export class PruebaComponent implements OnInit {
-  login = environment.login
+  login = 'jjjj'
   constructor() { }
 
   ngOnInit() {
