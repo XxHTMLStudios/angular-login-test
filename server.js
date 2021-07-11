@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static(__dirname + '/dist/login-angular'));
 
 // Send all requests to index.html
-app.get('/*', function(req, res) {
+app.get('', function(req, res) {
     console.log("*****************" + process.env.LOGIN_PASS)
   res.sendFile(path.join(__dirname + '/dist/login-angular/index.html'));
 });
