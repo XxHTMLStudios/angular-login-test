@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <label for="pass" class="label">Introduce la contraseña: </label>
+  <input id="pass" class="input" type="password" [formControl]="pass" />
+  <button class="button" (click)="checkPass()">Enviar</button>
+
+  <p class="error" *ngIf="isValid === false">
+    Lo sentimos esa contraseña no es válida
+  </p>
+  <p class="success" *ngIf="isValid === true">Contraseña válida</p>
+</div>
